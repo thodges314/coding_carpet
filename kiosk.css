@@ -1,0 +1,159 @@
+body {
+    background-color: #6d9fbe;
+    color: #ffffff;	
+    font-family: "NatoSans",sans-serif;
+	margin: 0;
+	position: relative;
+}
+.wfca-hof > span {
+    font-size: 50px;
+    font-weight: bold;
+	padding: 25px 75px;
+	display: block;
+}
+.wfca-text {
+    padding: 15px 30px;
+}
+.wfca-text > span:nth-child(2) {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    max-width: 750px;
+}
+.wfca-text > span:nth-child(1) {
+    background-image: url("img/text-icon.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 61px;
+    margin-right: 15px;
+    vertical-align: text-bottom;
+    width: 22px;
+}
+.wfca-numbers {
+    text-align: center;
+	clear: both;
+}
+.wfca-numbers .wfca-num-col .wfca-col > span {
+     background-color: #344561;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 2vw;
+    height: 130px;
+    line-height: 126px;
+    margin: 40px 15px;
+    text-align: center;
+    vertical-align: top;
+    width: 130px;
+}
+.wfca-numbers .wfca-num-col {
+    display: inline-block;
+	vertical-align: top;
+}
+.wfca-numbers .wfca-num-middle-col{
+	margin-top: -85px; 
+}
+.wfca-numbers .wfca-top-pad {
+	padding-top: 85px;
+}
+
+.wfca-kiosk-container .wfca-kiosk-bg-left {
+    background-image: url("img/Kiosk-screen-Left.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+.wfca-kiosk-container .wfca-kiosk-bg-right {
+    background-image: url("img/Kiosk-screen-Right.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+.wfca-kiosk-bg-right .wfca-hof {
+    float: right;
+}
+.wfca-kiosk-bg-right .wfca-text {
+    float: right;
+}
+/*** Popup Container ***/
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(78, 111, 143, 0.5);
+    z-index: 10;
+}
+.popup-container{
+	background-color: #ffffff;
+    left: 50%;
+    margin: -250px auto 0 -450px;
+    max-width: 750px;
+    padding: 100px 100px 40px 215px;
+    position: fixed;
+    top: 50%;
+    z-index: 11;
+}
+.popup-container .close-btn {
+    margin: 15px 20px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+	cursor: pointer;
+}
+.popup-container .wfca-mem-name {
+    color: #3a4c6b;
+    display: block;
+    font-size: 38px;
+}
+.popup-container .wfca-covering-news {
+    color: #3a4c6b;
+    display: block;
+    font-size: 18px;
+}
+.popup-container .wfca-details p {
+    color: #003468;
+    font-size: 18px;
+    line-height: 30px;
+    max-height: 400px;
+    overflow: scroll;
+}
+.wfca-mem-img-container .wfca-mem-num {
+    background-color: #344561;
+    border-radius: 50%;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: 215px;
+    width: 50px;
+}
+.wfca-mem-img-container .wfca-mem-img {
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+.wfca-mem-img-container .wfca-mem-img > img {
+    border-radius: 50%;
+}
+.wfca-mem-img-container {
+    display: inline-block;
+    left: -281px;
+    position: absolute;
+    top: -112px;
+}
