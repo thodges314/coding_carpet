@@ -14,4 +14,21 @@ $(document).ready(function(){
 		$("#popup-container-"+selected).addClass("hide");
 		$("#overlay-"+selected).addClass("hide");
 	});
+
+
+	/*generate popups */
+	console.log(people);
+	var peopleData = people[0];
+	console.log(peopleData);
+
+	$.each(people, function(index, person){
+		var entry = "<div style=\"clear:both;\"></div>"
+		entry += "<div class=\"overlay hide\" id=\"overlay-"+(index+1)+"\"></div>"
+		entry += "<div class=\"popup-container hide\" id=\"popup-container-"+(index+1)+"\">"
+		console.log(entry);
+
+
+		$('#popupData').append(entry);
+	})
+
 });
